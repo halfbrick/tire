@@ -70,6 +70,7 @@ module Tire
                 items = []
               end
             end
+            index.import(items, options, &block) if items.length > 0
             self
           end
         end
